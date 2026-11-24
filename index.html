@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Series de tiempo</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Datos que dependen de su pasado: estacionariedad y autocorrelación, procesos AR, MA y ARMA, la representación espectral, ARIMA y modelos estacionales, la metodología de Box y Jenkins (identificación, estimación, diagnóstico) y la predicción con sus intervalos, con las demostraciones en el espacio de Hilbert de las variables de varianza finita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Series de <b>tiempo</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>El consumo de electricidad de mañana ya está escrito, en parte, en el de hoy</h1>
+  <p class="lede">La demanda de electricidad de un país sube en verano, baja los fines de semana y crece año tras año, y cada mes se parece al anterior. Esa dependencia del pasado rompe el supuesto de observaciones independientes y, a la vez, es lo que permite predecir. Este curso construye los modelos que la describen, del ruido blanco a los ARIMA estacionales, con la teoría de los procesos estacionarios demostrada y laboratorios donde se mueven los coeficientes y se ve cambiar la serie, su autocorrelación y su espectro.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 11 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para estudiantes de estadística, matemática, actuaría y economía, y para quien pronostica ventas, demanda o tráfico y quiere saber qué hay detrás. Conviene haber leído Procesos estocásticos (procesos, paseo al azar), Inferencia estadística (máxima verosimilitud, contrastes) y Álgebra lineal avanzada (espacios de Hilbert y el teorema de la proyección). Las ecuaciones en diferencias se repasan aquí en lo que hace falta.</p>
+    <p><b>Cómo está hecho.</b> Una misma serie recorre el curso: la demanda mensual de electricidad de un país durante veinte años, con tendencia, estacionalidad y algún choque. Primero se describe y se limpia, luego se estudian los modelos con series simuladas, y al final se le aplica el ciclo completo de Box y Jenkins para pronosticar el año siguiente. Los laboratorios dejan mover los coeficientes de un ARMA y ver la serie, la autocorrelación, la autocorrelación parcial, las raíces en el plano complejo y el espectro. Las prácticas usan Python (`statsmodels.tsa`) o R (`forecast`, `stats::arima`). Este curso es la base de Econometría, donde están la cointegración y los modelos dinámicos; los modelos de volatilidad (GARCH) están en Finanzas cuantitativas.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Qué es una serie de tiempo</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="nociones-basicas"><span class="n">01</span><b>Series de tiempo, estacionariedad y autocorrelación</b><p>Una serie como realización de un proceso, la estacionariedad y la función de autocorrelación.</p></div>
+    <div class="mod soon" data-id="tendencia-y-estacionalidad"><span class="n">02</span><b>Estimación y supresión de la tendencia y la estacionalidad</b><p>Separar la serie en tendencia, componente estacional y resto, o quitarlas con diferencias.</p></div>
+    <div class="mod soon" data-id="prediccion-lineal-y-hilbert"><span class="n">03</span><b>La predicción lineal en el espacio de Hilbert L²</b><p>El mejor predictor lineal es una proyección ortogonal, y de ahí sale la autocorrelación parcial.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> Procesos estacionarios</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="ar-y-ma"><span class="n">04</span><b>Procesos lineales, autorregresivos y de promedios móviles</b><p>Construir dependencia filtrando ruido blanco: hacia el pasado de la serie o hacia el pasado del ruido.</p></div>
+    <div class="mod soon" data-id="arma"><span class="n">05</span><b>Procesos ARMA causales e invertibles</b><p>Juntar AR y MA, y saber cuándo el modelo tiene sentido mirando las raíces de dos polinomios.</p></div>
+    <div class="mod soon" data-id="representacion-espectral"><span class="n">06</span><b>La representación espectral de un proceso estacionario</b><p>Ver la serie como una suma de oscilaciones y medir cuánta varianza aporta cada frecuencia.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Más allá de la estacionariedad</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="arima"><span class="n">07</span><b>Procesos integrados: ARIMA</b><p>Series que se vuelven estacionarias al diferenciarlas: el paseo al azar y sus parientes.</p></div>
+    <div class="mod soon" data-id="modelos-estacionales"><span class="n">08</span><b>Procesos estacionales: SARIMA</b><p>Dependencia que se repite cada 12 meses: diferencias estacionales y el modelo multiplicativo.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> El ciclo de Box y Jenkins</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="identificacion"><span class="n">09</span><b>Identificación del modelo</b><p>Decidir transformaciones, diferencias y órdenes a partir de los datos.</p></div>
+    <div class="mod soon" data-id="estimacion-y-seleccion"><span class="n">10</span><b>Estimación de parámetros y selección del modelo</b><p>De Yule-Walker a la máxima verosimilitud exacta con el filtro de Kalman, y cómo elegir entre modelos.</p></div>
+    <div class="mod soon" data-id="diagnostico-y-prediccion"><span class="n">11</span><b>Diagnóstico y predicción</b><p>Comprobar que los residuos son ruido blanco y pronosticar con intervalos honestos.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-series-de-tiempo" target="_blank" rel="noopener">github.com/aaramirez/mate-series-de-tiempo</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
